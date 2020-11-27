@@ -9,7 +9,7 @@ jobs:
   build:
     executor: newman/postman-newman-docker
     steps:
-      - checkout
-      - newman/newman-run:
-          collection: ./Users.postman_collection.json
-          environment: ./My-Remote-API-Testing.postman_environment.json
+     - checkout
+     - newman/newman-run:
+         collection: ./Users.postman_collection.json
+         environment: ./Remote-API-Testing.postman_environment.json
